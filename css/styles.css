@@ -19,9 +19,17 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     font-family: 'Space Mono', monospace;
+    color: var(--Dark-grayish-cyan);
+}
+.logo{
+    margin: 5%;
+}
+.logo img{
+    background-repeat: no-repeat;
 }
 .container{
     background-color: var(--White);
@@ -30,6 +38,7 @@ body{
     width: 650px;
     padding: 15px;
     font-size: 0.7rem;
+    border-radius: 10px;
 }
 .calculadora{
     display: flex;
@@ -38,7 +47,6 @@ body{
     width: 50%;
     padding: 5px;
     margin-right: 20px;
-
 }
 .calculadora__Bill{
     margin-bottom: 20px;
@@ -48,14 +56,24 @@ body{
     width: 100%;
     height: 30px;
     text-align: right;
-    border: 2px solid var(--Dark-grayish-cyan2);
-    background: url(/images/icon-dollar.svg) no-repeat scroll 7px;
     border-radius: 4px;
     font-weight: 700;
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
+    background-color: var(--Light-grayish-cyan2);
+    border: 0;
+    outline: none;
+    color: var(--Very-dark-cyan);
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+
 }
 
+.calculadora__Bill input:hover{
+    border: 2px solid var(--Strong-cyan);
+}
 .caculadora__porcentaje{
     display: grid;
     grid-template-columns: repeat(3, 93px);
@@ -68,15 +86,15 @@ body{
 .caculadora__porcentaje button:hover{
     cursor: pointer;
     color: var(--Very-dark-cyan);
-    background-color: var(--Light-grayish-cyan);
-    border: 1px;
+    background-color: var(--Strong-cyan);
+    border: 0; 
   }
-
 .caculadora__porcentaje button{
     background-color: var(--Very-dark-cyan);
     color: var(--Light-grayish-cyan2);
     height: 35px;
-    border-radius: 10%;
+    border: 0;
+    border-radius: 5px;
     font-weight: 700;
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
@@ -86,10 +104,16 @@ body{
     height: 35px;
     text-align: right;
     border-radius: 4px;
-    border: 1px solid var(--Dark-grayish-cyan2);
+    border: 0;
+    outline: none;
     font-weight: 700;
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
+    background-color: var(--Light-grayish-cyan2);
+    color: var(--Very-dark-cyan);
+}
+.caculadora__porcentaje input:hover{
+    border: 2px solid var(--Strong-cyan);
 }
 .calculadora__cantidad input{
     cursor: pointer;
@@ -97,16 +121,27 @@ body{
     height: 35px;
     text-align: right;
     border-radius: 4px;
-    border: 2px solid var(--Dark-grayish-cyan2);
-    background: url(/images/icon-person.svg) no-repeat scroll 7px;
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-color: var(--Light-grayish-cyan2);
+    border: 0;
+    outline: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    
 }
-
+.calculadora__cantidad input:hover{
+    border: 2px solid var(--Strong-cyan);
+}
 .resultado{
     color: white;
     width: 50%;
     padding: 30px;
     background-color: var(--Very-dark-cyan);
-    border-radius: 4%;
+    border-radius: 4%;  
 }
 .resultado span{
     color: var(--Dark-grayish-cyan);
@@ -119,7 +154,8 @@ body{
 
 .resultado .valor{
     font-size: 50px;
-    color: var(--Dark-grayish-cyan2)
+    color: var(--Strong-cyan)
+
 }
 
 .resultado button {
@@ -128,9 +164,13 @@ body{
     font-size: 1.1rem;
     margin-top: 40px;
     border-radius: 7px;
-    background-color: var(--Light-grayish-cyan);
+    background-color: var(--Strong-cyan);
     color: var(--Very-dark-cyan);
     font-weight: 700;
     cursor: pointer;
+    border: 0;
 
+}
+.resultado button:hover{
+    background-color: var(--Light-grayish-cyan);
 }
