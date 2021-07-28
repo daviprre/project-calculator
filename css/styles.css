@@ -4,8 +4,122 @@
 --Strong-cyan: hsl(172, 67%, 45%);
 --Very-dark-cyan: hsl(183, 100%, 15%);
 --Dark-grayish-cyan: hsl(186, 14%, 43%);
---Dark-grayish-cyan: hsl(184, 14%, 56%);
+--Dark-grayish-cyan2: hsl(184, 14%, 56%);
 --Light-grayish-cyan: hsl(185, 41%, 84%);
---Light-grayish-cyan: hsl(189, 41%, 97%);
+--Light-grayish-cyan2: hsl(189, 41%, 97%);
 --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Light-grayish-cyan);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;;
+}
+.container{
+    background-color: var(--White);
+    display: flex;
+    height: 300px;
+    width: 650px;
+    padding: 15px;
+    font-size: 0.7rem;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 5px;
+    margin-right: 20px;
+
+}
+.calculadora__Bill{
+    margin-bottom: 20px;
+}
+.calculadora__Bill input{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    border: 2px solid var(--Dark-grayish-cyan2);
+    background: url(/images/icon-dollar.svg) no-repeat scroll 7px;
+    border-radius: 4px;
+}
+
+.caculadora__porcentaje{
+    display: grid;
+    grid-template-columns: repeat(3, 93px);
+    grid-gap: 7px;
+    grid-auto-rows: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.caculadora__porcentaje:hover button{
+    cursor: pointer;
+    color: orange;
+  }
+
+.caculadora__porcentaje button{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Light-grayish-cyan2);
+    height: 35px;
+    border-radius: 10%;
+}
+.caculadora__porcentaje input{
+    cursor: pointer;
+    height: 35px;
+    text-align: right;
+    border-radius: 4px;
+    border: 1px solid var(--Dark-grayish-cyan2);
+}
+.calculadora__cantidad input{
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    text-align: right;
+    border-radius: 4px;
+    border: 2px solid var(--Dark-grayish-cyan2);
+    background: url(/images/icon-person.svg) no-repeat scroll 7px;
+}
+
+.resultado{
+    color: white;
+    width: 50%;
+    padding: 30px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 4%;
+}
+.resultado span{
+    color: var(--Dark-grayish-cyan);
+}
+.resultado__individual, .resultado__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultado .valor{
+    font-size: 50px;
+    color: var(--Dark-grayish-cyan2)
+}
+
+.resultado button {
+    width: 100%;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    border-radius: 7px;
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    cursor: pointer;
+
 }
