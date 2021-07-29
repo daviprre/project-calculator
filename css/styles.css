@@ -1,4 +1,5 @@
 /* font-family: 'Space Mono', monospace; */
+@media screen and (min-width: 700px){
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 :root {
 --Strong-cyan: hsl(172, 67%, 45%);
@@ -8,4 +9,53 @@
 --Light-grayish-cyan: hsl(185, 41%, 84%);
 --Light-grayish-cyan: hsl(189, 41%, 97%);
 --White: hsl(0, 0%, 100%);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin: 25px;
+}
+.container{
+    width: 800px;
+    height: 370px;
+    display: flex;
+}
+
+.container .calculadora{
+    width: 50%;
+    height: auto;
+}
+.container .resultado {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+.container .calculadora .caculadora__porcentaje{
+    display: grid;
+    grid-template-columns: repeat(3, 93px);
+    grid-gap: 7px;
+    grid-auto-rows: 35px;
+}
+.container .calculadora .caculadora__porcentaje button, .container .calculadora .caculadora__porcentaje input{
+    width: 100%;
+    height: 37px;
+}
+.container .resultado .resultado__total .p--total, .container .resultado .resultado__total p{
+    margin-top: 100px;
+    
+}
+.container .resultado .resultado__total .p--total, .container .resultado .resultado__individual .p--individual{
+    font-size: 3rem;
+}
+.container .resultado button{
+    height: 50px;
+    margin-top: 125px;
+    width: 100%;
+}
 }
