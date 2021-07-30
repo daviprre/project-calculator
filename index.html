@@ -16,37 +16,39 @@
         <div class="calculadora">
             <div class="calculadora__Bill">
                 <p>Bill</p>
-                <input type="number" name="" id="" placeholder="0.00">
+                <input type="number" name="" id="valorServicio" placeholder="0.00">
             </div>
             <p>Select Tip %</p>
             <div class="caculadora__porcentaje">
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
+                <button type="button" id="button5" value="5" onclick="ObtenerPorcentaje5()">5%</button>
+                <button type="button" id="button10" value="10" onclick="ObtenerPorcentaje10()">10%</button>
+                <button type="button" id="button15" value="15" onclick="ObtenerPorcentaje15()">15%</button>
+                <button type="button" id="button25" value="25" onclick="ObtenerPorcentaje25()">25%</button>
+                <button type="button" id="button50" value="50" onclick="ObtenerPorcentaje50()">50%</button>
                 <input type="number" name="" id="" placeholder="Custom">
             </div>
             <div class="calculadora__cantidad">
                 <p>Number of People</p>
-                <p></p>
-                <input type="number" name="" id="" placeholder="0">
+                <p class="cantidad__validacion" id="mensajeValidacion"></p>
+                <input type="number" name="" id="CantidadPersonas" placeholder="0">
             </div>
         </div>
         <div class="resultado">
             <div class="resultado__individual">
                 <p>Tip Amount<br><span>/person</span></p>
                 <div class="valor">
-                    <p>$0.00</p>
+                    <p id="valorIndividual"></p>
                 </div>
             </div>
             <div class="resultado__total">
                 <p>Total<br><span>/person</span></p>
                 <div class="valor">
-                    <p>$0.00</p>
+                    <p id="valorTotal"></p>
                 </div>
             </div>
-            <button>Reset</button>
+            <button onclick="BorrarCampos()">Reset</button>
     </div>
+    <script src="./propinas.js">
+    </script>
 </body>
 </html>

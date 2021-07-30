@@ -115,6 +115,19 @@ body{
 .caculadora__porcentaje input:hover{
     border: 2px solid var(--Strong-cyan);
 }
+
+.calculadora__cantidad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculadora__cantidad p{
+    width: 50%;
+}
+
+.calculadora__cantidad .cantidad__validacion{
+    text-align: end;
+}
 .calculadora__cantidad input{
     cursor: pointer;
     width: 100%;
@@ -127,6 +140,7 @@ body{
     background-position-x: 5px;
     background-color: var(--Light-grayish-cyan2);
     border: 0;
+    color: var(--Very-dark-cyan);
     outline: none;
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
