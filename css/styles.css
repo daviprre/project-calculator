@@ -4,8 +4,188 @@
 --Strong-cyan: hsl(172, 67%, 45%);
 --Very-dark-cyan: hsl(183, 100%, 15%);
 --Dark-grayish-cyan: hsl(186, 14%, 43%);
---Dark-grayish-cyan: hsl(184, 14%, 56%);
+--Dark-grayish-cyan2: hsl(184, 14%, 56%);
 --Light-grayish-cyan: hsl(185, 41%, 84%);
---Light-grayish-cyan: hsl(189, 41%, 97%);
+--Light-grayish-cyan2: hsl(189, 41%, 97%);
 --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Light-grayish-cyan);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    color: var(--Dark-grayish-cyan);
+}
+.logo{
+    margin: 5%;
+}
+.logo img{
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: var(--White);
+    display: flex;
+    height: 300px;
+    width: 650px;
+    padding: 15px;
+    font-size: 0.7rem;
+    border-radius: 10px;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 5px;
+    margin-right: 20px;
+}
+.calculadora__Bill{
+    margin-bottom: 20px;
+}
+.calculadora__Bill input{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    background-color: var(--Light-grayish-cyan2);
+    border: 0;
+    outline: none;
+    color: var(--Very-dark-cyan);
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+
+}
+
+.calculadora__Bill input:hover{
+    border: 2px solid var(--Strong-cyan);
+}
+.caculadora__porcentaje{
+    display: grid;
+    grid-template-columns: repeat(3, 93px);
+    grid-gap: 7px;
+    grid-auto-rows: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.caculadora__porcentaje button:hover{
+    cursor: pointer;
+    color: var(--Very-dark-cyan);
+    background-color: var(--Strong-cyan);
+    border: 0; 
+  }
+.caculadora__porcentaje button{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Light-grayish-cyan2);
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+}
+.caculadora__porcentaje input{
+    cursor: pointer;
+    height: 35px;
+    text-align: right;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    background-color: var(--Light-grayish-cyan2);
+    color: var(--Very-dark-cyan);
+}
+.caculadora__porcentaje input:hover{
+    border: 2px solid var(--Strong-cyan);
+}
+
+.calculadora__cantidad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculadora__cantidad p{
+    width: 50%;
+}
+
+.calculadora__cantidad .cantidad__validacion{
+    text-align: end;
+}
+.calculadora__cantidad input{
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    text-align: right;
+    border-radius: 4px;
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-color: var(--Light-grayish-cyan2);
+    border: 0;
+    color: var(--Very-dark-cyan);
+    outline: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+}
+.calculadora__cantidad input:hover{
+    border: 2px solid var(--Strong-cyan);
+}
+.resultado{
+    color: white;
+    width: 50%;
+    padding: 30px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 4%;  
+}
+.resultado span{
+    color: var(--Dark-grayish-cyan);
+}
+.resultado__individual, .resultado__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultado .valor{
+    font-size: 50px;
+    color: var(--Strong-cyan)
+
+}
+
+.resultado button {
+    width: 100%;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    border-radius: 7px;
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    text-transform: uppercase;
+
+}
+.resultado button:hover{
+    background-color: var(--Light-grayish-cyan);
 }

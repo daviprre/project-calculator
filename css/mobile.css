@@ -1,0 +1,66 @@
+@media screen and (max-width: 700px){
+    body{
+        height: 150vh;
+    }
+    .container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .container .calculadora{
+        width: 100%;
+        height: 60%;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .container .calculadora .calculadora__Bill input{
+        height: 50px;
+    }
+
+    .container .calculadora .caculadora__porcentaje{
+        display: flex;
+        height: 50%;
+        box-sizing: border-box;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .container .calculadora .caculadora__porcentaje button{
+        width: 45%;
+        height: 50px;
+
+    }
+    
+    .container .calculadora .caculadora__porcentaje input{
+        width: 45%;
+        height: 50px;
+    }
+    .container .calculadora .calculadora__cantidad input{
+        height: 50px;
+    }
+    .container .resultado{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 20px 0 20px;
+        
+    }
+    .container .resultado .resultado__total{
+        margin-top: -20px;
+    }
+    .container .resultado button{
+        height: 60px;
+        margin: 0;
+    }
+
+
+}
