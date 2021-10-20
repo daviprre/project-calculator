@@ -16,16 +16,17 @@
         <div class="calculadora">
             <div class="calculadora__Bill">
                 <p>Bill</p>
+                <p class="valor__validacion" id="mensajeValorValidacion"></p>
                 <input type="number" name="" id="valorServicio" placeholder="0.00">
             </div>
             <p>Select Tip %</p>
             <div class="caculadora__porcentaje">
-                <button type="button" id="button5" value="5" onclick="ObtenerPorcentaje5()">5%</button>
-                <button type="button" id="button10" value="10" onclick="ObtenerPorcentaje10()">10%</button>
-                <button type="button" id="button15" value="15" onclick="ObtenerPorcentaje15()">15%</button>
-                <button type="button" id="button25" value="25" onclick="ObtenerPorcentaje25()">25%</button>
-                <button type="button" id="button50" value="50" onclick="ObtenerPorcentaje50()">50%</button>
-                <input type="number" name="" id="" placeholder="Custom">
+                <button type="button" id="button5" value="5" onclick="ObtenerPorcentaje(this)">5%</button>
+                <button type="button" id="button10" value="10" onclick="ObtenerPorcentaje(this)">10%</button>
+                <button type="button" id="button15" value="15" onclick="ObtenerPorcentaje(this)">15%</button>
+                <button type="button" id="button25" value="25" onclick="ObtenerPorcentaje(this)">25%</button>
+                <button type="button" id="button50" value="50" onclick="ObtenerPorcentaje(this)">50%</button>
+                <input onkeypress="Obtener(this, event)" type="number" name="" id="custom" placeholder="Custom">
             </div>
             <div class="calculadora__cantidad">
                 <p>Number of People</p>

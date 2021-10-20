@@ -50,7 +50,18 @@ body{
 }
 .calculadora__Bill{
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+.calculadora__Bill p{
+    width: 50%;
+}
+
+.calculadora__Bill .valor__validacion{
+    text-align: end;
+}
+
 .calculadora__Bill input{
     cursor: pointer;
     width: 100%;
@@ -68,6 +79,8 @@ body{
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
+
+    
 
 }
 
